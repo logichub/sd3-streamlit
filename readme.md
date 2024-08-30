@@ -19,30 +19,26 @@ To run this application, you will need Python and several dependencies installed
 ### Dependencies
 
 Install the required Python packages using:
-```
-bash
+```bash
 pip install requirements.txt
-
 ````
+
 ## Usage
 
 To start the application, navigate to the directory containing `app.py` and run the following command:
-```
-bash
+```bash
 streamlit run app.py
 ```
-
 
 The application will start and be accessible through a web browser at `http://localhost:8501`.
 
 ## Configuration
 
 Before running the application, ensure you have the necessary API keys from Stability AI. Set these keys in the `headers` dictionary within the `generate_image` function:
-```
-python
+```python
 headers = {
-"Authorization": "Bearer YOUR_API_KEY",
-"Accept": "image/"
+  "Authorization": "Bearer YOUR_API_KEY",
+  "Accept": "image/"
 }
 ```
 
